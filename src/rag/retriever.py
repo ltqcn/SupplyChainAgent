@@ -66,8 +66,7 @@ class UnifiedRetriever:
         # Fusion
         self.rff_fusion = RFFFusion() if use_rff_fusion else None
         
-        # Vectorizer for query encoding
-        self.vectorizer = DocumentVectorizer()
+        # Vectorizer will be obtained from MemoryManager singleton to avoid duplicate loading
         
         # Document storage
         self.doc_texts: dict[str, str] = {}
@@ -200,8 +199,12 @@ class UnifiedRetriever:
         else:  # hybrid
             weights = {"BM25": 0.3, "HNSW": 0.4, "IVF_PQ": 0.3}
         
-        # Encode query
-        query_embedding = self.vectorizer.encode([query])[0]
+        # Encode query (use shared vectorizer from MemoryManager)
+        from src.memory.offload import MemoryManager
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
+        query_embedding = MemoryManager._vectorizer.encode([query])[0]
         
         # Collect retrieval paths for logging
         retrieval_paths = []

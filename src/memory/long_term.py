@@ -15,7 +15,6 @@ from typing import Any
 import numpy as np
 
 from src.config import settings
-from src.data.vectorizer import DocumentVectorizer
 from src.models import MemoryType, SessionSummary
 
 
@@ -36,7 +35,7 @@ class LongTermMemory:
         self.storage_dir.mkdir(parents=True, exist_ok=True)
         
         self.summaries: list[SessionSummary] = []
-        self.vectorizer = DocumentVectorizer()
+        # Vectorizer is passed in from MemoryManager to avoid duplicate model loading
         
         # Load existing summaries
         self._load_summaries()
@@ -77,8 +76,12 @@ class LongTermMemory:
         Returns:
             Created session summary
         """
-        # Generate embedding for the summary
-        embedding = self.vectorizer.encode_single(summary).tolist()
+        # Generate embedding for the summary (use shared vectorizer from MemoryManager)
+        from src.memory.offload import MemoryManager
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
+        embedding = MemoryManager._vectorizer.encode_single(summary).tolist()
         
         session_summary = SessionSummary(
             session_id=session_id,
@@ -114,8 +117,12 @@ class LongTermMemory:
         if not self.summaries:
             return []
         
-        # Encode query
-        query_embedding = self.vectorizer.encode_single(query)
+        # Encode query (use shared vectorizer from MemoryManager)
+        from src.memory.offload import MemoryManager
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
+        query_embedding = MemoryManager._vectorizer.encode_single(query)
         
         # Calculate similarities
         results = []

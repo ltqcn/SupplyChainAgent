@@ -46,7 +46,8 @@ class DiskOffloadManager:
         self.offload_dir.mkdir(parents=True, exist_ok=True)
         
         self.threshold = threshold_tokens or settings.DISK_OFFLOAD_THRESHOLD
-        self.vectorizer = DocumentVectorizer()
+        # Use shared vectorizer from MemoryManager to avoid duplicate model loading
+        self.vectorizer = None  # Lazy get from MemoryManager
         
         # Track offloaded sessions
         self.offloaded_files: dict[str, Path] = {}
@@ -86,8 +87,11 @@ class DiskOffloadManager:
         # Create summary
         summary_text = self._create_summary(turns_to_offload)
         
-        # Generate embedding for recovery
-        embedding = self.vectorizer.encode_single(summary_text).tolist()
+        # Generate embedding for recovery (use shared vectorizer)
+        from src.data.vectorizer import DocumentVectorizer
+        if MemoryManager._vectorizer is None:
+            MemoryManager._vectorizer = DocumentVectorizer()
+        embedding = MemoryManager._vectorizer.encode_single(summary_text).tolist()
         
         # Extract key entities
         all_entities = []
@@ -287,6 +291,9 @@ class MemoryManager:
     - Disk-offload management
     """
     
+    # Class-level shared vectorizer instance to avoid reloading model
+    _vectorizer: DocumentVectorizer | None = None
+    
     def __init__(self, session_id: str):
         """Initialize memory manager for a session.
         
@@ -299,6 +306,11 @@ class MemoryManager:
         self.long_term = LongTermMemory()
         self.permanent = PermanentKnowledge()
         self.offload = DiskOffloadManager()
+        
+        # Initialize shared vectorizer lazily
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
     
     def add_to_short_term(
         self,
@@ -364,10 +376,8 @@ class MemoryManager:
         Returns:
             Dictionary with memories from each tier
         """
-        from src.data.vectorizer import DocumentVectorizer
-        
-        vectorizer = DocumentVectorizer()
-        query_embedding = vectorizer.encode_single(query)
+        # Use shared vectorizer instance (avoids reloading model)
+        query_embedding = MemoryManager._vectorizer.encode_single(query)
         
         # Short-term: recent memories
         short_term_memories = self.short_term.get_recent(n=5)

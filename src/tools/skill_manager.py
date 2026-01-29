@@ -14,7 +14,6 @@ from typing import Any
 import numpy as np
 
 from src.config import settings
-from src.data.vectorizer import DocumentVectorizer
 from src.models import AutonomyLevel, SkillDefinition, SkillLevel
 
 
@@ -38,7 +37,7 @@ class SkillManager:
         self.skills_dir.mkdir(parents=True, exist_ok=True)
         
         self.skills: dict[str, SkillDefinition] = {}
-        self.vectorizer = DocumentVectorizer()
+        # Vectorizer will be obtained from MemoryManager singleton to avoid duplicate loading
         
         # Load built-in skills
         self._register_builtin_skills()
@@ -226,9 +225,13 @@ class SkillManager:
         Args:
             skill: Skill definition to register
         """
-        # Generate embedding for matching
+        # Generate embedding for matching (use shared vectorizer from MemoryManager)
+        from src.memory.offload import MemoryManager
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
         text_to_embed = f"{skill.name}: {skill.description}"
-        skill.embedding = self.vectorizer.encode_single(text_to_embed).tolist()
+        skill.embedding = MemoryManager._vectorizer.encode_single(text_to_embed).tolist()
         
         self.skills[skill.name] = skill
     
@@ -281,7 +284,12 @@ class SkillManager:
         Returns:
             List of (skill, similarity) tuples
         """
-        query_embedding = self.vectorizer.encode_single(query)
+        # Use shared vectorizer from MemoryManager
+        from src.memory.offload import MemoryManager
+        if MemoryManager._vectorizer is None:
+            from src.data.vectorizer import DocumentVectorizer
+            MemoryManager._vectorizer = DocumentVectorizer()
+        query_embedding = MemoryManager._vectorizer.encode_single(query)
         
         matches = []
         for skill in self.skills.values():
