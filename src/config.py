@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     # Kimi API Configuration
     KIMI_API_KEY: str = Field(default="", description="Kimi API Key")
     KIMI_BASE_URL: str = Field(default="https://api.moonshot.cn/v1")
-    KIMI_MODEL: str = Field(default="kimi-v1-128k")
+    KIMI_MODEL: str = Field(default="kimi-latest")
     
     # Application Mode
     APP_ENV: Literal["development", "production", "testing"] = Field(default="development")

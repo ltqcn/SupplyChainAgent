@@ -37,6 +37,7 @@ class KimiClient:
         messages: list[dict[str, str]],
         temperature: float = 0.7,
         max_tokens: int | None = None,
+        top_p: float = 1.0,
         stream: bool = False,
         tools: list[dict[str, Any]] | None = None,
         max_retries: int = 3,
@@ -47,6 +48,7 @@ class KimiClient:
             messages: List of message dicts with role and content
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
+            top_p: Nucleus sampling parameter
             stream: Whether to stream response
             tools: Optional tool definitions for function calling
             max_retries: Maximum retry attempts
@@ -63,6 +65,7 @@ class KimiClient:
                     messages=messages,  # type: ignore
                     temperature=temperature,
                     max_tokens=max_tokens,
+                    top_p=top_p,
                     stream=stream,
                     tools=tools,  # type: ignore
                 )
@@ -149,7 +152,12 @@ class KimiClient:
         ]
         
         start_time = time.time()
-        response = await self.chat_complete(messages, temperature=0.3)
+        response = await self.chat_complete(
+            messages,
+            temperature=0.6,
+            max_tokens=32768,
+            top_p=1.0,
+        )
         latency_ms = int((time.time() - start_time) * 1000)
         
         return {
@@ -193,6 +201,7 @@ class KimiClient:
             messages,
             temperature=0.1,
             max_tokens=200,
+            top_p=1.0,
         )
         
         import json

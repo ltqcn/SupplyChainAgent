@@ -12,6 +12,7 @@ src/context/progressive_disclosure.py
 src/context/token_budget.py
 src/data/__init__.py
 src/data/database.py
+src/data/simple_vectorizer.py
 src/data/synthetic_generator.py
 src/data/vectorizer.py
 src/memory/__init__.py
@@ -20,15 +21,19 @@ src/memory/offload.py
 src/memory/short_term.py
 src/rag/__init__.py
 src/rag/bm25_retriever.py
+src/rag/hnsw_pure.py
 src/rag/hnsw_retriever.py
+src/rag/ivf_pq_pure.py
 src/rag/ivf_pq_retriever.py
 src/rag/retriever.py
 src/rag/rff_fusion.py
+src/rag/simple_retriever.py
 src/tools/__init__.py
 src/tools/skill_manager.py
 src/tools/tool_executor.py
 src/ui/__init__.py
 src/ui/backend.py
+src/ui/backend_demo.py
 src/ui/backend_main.py
 supplychainrag.egg-info/PKG-INFO
 supplychainrag.egg-info/SOURCES.txt

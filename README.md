@@ -231,24 +231,16 @@
 ## 快速体验
 
 ```bash
-# 启动后端 (端口 8888)
+
+export KIMI_API_KEY="xxx"
+
 ./start_demo.sh
 
-# 打开前端 (自动生成供应链查询，3秒间隔)
-open demo_frontend.html
 ```
 
-实时演示地址：http://localhost:8888/demo/stream
 
----
-
-## 项目统计
-
-- **代码行数**：~4,000 行纯 Python
-- **依赖数量**：12 个核心依赖（无 FAISS/PyTorch）
-- **部署体积**：< 50MB（不含模型）
-- **响应延迟**：P95 < 2s（含 RAG + LLM）
-- **Token 效率**：平均 227/8000 (2.8%) 上下文利用率
+# 应援物品供应链Agent的一图流演示
+![描述文字](./agent.gif)
 
 
 
@@ -257,11 +249,7 @@ open demo_frontend.html
 
 
 
-
-
-
-
-# 应援物品供应链AI助手
+# 应援物品供应链Agent
 
 <p align="center">
   <strong>可治理RAG × 渐进式披露 × Manus-like记忆架构</strong>
