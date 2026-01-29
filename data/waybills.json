@@ -1,0 +1,3387 @@
+[
+  {
+    "waybill_id": "WB顺00000001",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 2.386070390366253,
+    "volume_cbm": 0.007680421132887843,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": "2026-01-28T18:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T20:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T18:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000002",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 2.4952238872731574,
+    "volume_cbm": 0.009554996528662842,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": "2026-01-22T23:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T22:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T23:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000003",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 4.770548547179619,
+    "volume_cbm": 0.008417719737384144,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-24T05:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T05:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000004",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 4.041401449893421,
+    "volume_cbm": 0.002846850176285888,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-29T05:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T05:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000005",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 4.943872869647775,
+    "volume_cbm": 0.005861939111768364,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-24T01:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T04:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T01:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000006",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 1.5706922274070836,
+    "volume_cbm": 0.003913943157658202,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000007",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 2.8095708092413627,
+    "volume_cbm": 0.0019814860900346097,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-24T08:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T10:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T21:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T08:00:00",
+        "location": "成都市锦江区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000008",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 4.312843444252593,
+    "volume_cbm": 0.004836462573519926,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T04:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T08:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T08:00:00",
+        "location": "北京市朝阳区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000009",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 1.0678621473727523,
+    "volume_cbm": 0.006618857448530872,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-28T01:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T01:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000010",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 4.3375673178300875,
+    "volume_cbm": 0.006858249983931749,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T17:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T22:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T17:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000011",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 1.9064675749870985,
+    "volume_cbm": 0.0038127121402768104,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-23T15:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T15:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000012",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 3.8506503613634555,
+    "volume_cbm": 0.004353821734383133,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-27T23:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T23:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000013",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 4.735084409835034,
+    "volume_cbm": 0.004806431701874951,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000014",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 1.5091019109840451,
+    "volume_cbm": 0.0019739654373453997,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-25T06:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T06:00:00",
+        "location": "成都市锦江区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000015",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 0.6302893147757074,
+    "volume_cbm": 0.0034594334984145237,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T05:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T05:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000016",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 0.9129095737450039,
+    "volume_cbm": 0.0057743441979303655,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": "2026-01-26T23:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T23:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000017",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 3.054171004764788,
+    "volume_cbm": 0.0017646133597946138,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000018",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 3.231842033484569,
+    "volume_cbm": 0.004727653640944522,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T19:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T13:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T19:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000019",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 1.4923329597613606,
+    "volume_cbm": 0.009860010924890077,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-28T13:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T23:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T13:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000020",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 0.5347845795619037,
+    "volume_cbm": 0.007723127110867911,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-26T03:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T03:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000021",
+    "carrier": "圆通",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 2.4629881798054045,
+    "volume_cbm": 0.005137788253206476,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-26T16:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T02:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T16:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000022",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.2734293126013105,
+    "volume_cbm": 0.00952852878394073,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-24T07:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T23:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T07:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000023",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 0.8539118936728693,
+    "volume_cbm": 0.008834719745758706,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T07:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T07:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000024",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 2.079948807308122,
+    "volume_cbm": 0.009624010140974353,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T15:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T05:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T15:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000025",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 1.2971575802625313,
+    "volume_cbm": 0.007955632803228044,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-24T22:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T22:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000026",
+    "carrier": "京东物流",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 2.4899362872632818,
+    "volume_cbm": 0.0037253839162511167,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": "2026-01-23T18:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T18:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000027",
+    "carrier": "韵达",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 4.242634842484047,
+    "volume_cbm": 0.0016905790105610952,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T22:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T09:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000028",
+    "carrier": "圆通",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 1.1788748451303734,
+    "volume_cbm": 0.0015568633009099065,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T12:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T12:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000029",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 4.959437101910994,
+    "volume_cbm": 0.005716616978531572,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000030",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 3.412874106361881,
+    "volume_cbm": 0.0015932066885174572,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T13:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000031",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 1.8960428189831544,
+    "volume_cbm": 0.006904492462324497,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T11:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T11:00:00",
+        "location": "南京市鼓楼区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000032",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 0.9205383427970979,
+    "volume_cbm": 0.007034104360719453,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-26T22:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T19:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T01:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T22:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000033",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 2.688219143927273,
+    "volume_cbm": 0.0030388874188049856,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T09:00:00",
+        "location": "北京市朝阳区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000034",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 3.187608984822328,
+    "volume_cbm": 0.002388274851890094,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T00:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T04:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T00:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000035",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 3.247679399566171,
+    "volume_cbm": 0.007771520486003374,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T16:00:00",
+        "location": "广州市天河区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000036",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 4.929979070892098,
+    "volume_cbm": 0.005155119805968903,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-26T16:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T16:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000037",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 1.1227934057154405,
+    "volume_cbm": 0.003250028904301064,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000038",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.1630689519622193,
+    "volume_cbm": 0.004937253041754828,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T07:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T11:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T07:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000039",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 2.2377475312006774,
+    "volume_cbm": 0.001734448934899375,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-23T13:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T13:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000040",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 3.6323239485919263,
+    "volume_cbm": 0.002249134226363676,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-25T00:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000041",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 2.9696191044972595,
+    "volume_cbm": 0.007545113067924387,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-28T05:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T05:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000042",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 0.7826321795497873,
+    "volume_cbm": 0.008530189485448019,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T09:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T02:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000043",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 1.5825390746294459,
+    "volume_cbm": 0.004749108356876859,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T10:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T14:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T10:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000044",
+    "carrier": "顺丰",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.6414261748114574,
+    "volume_cbm": 0.0011461800799805286,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T02:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000045",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 4.160789895002397,
+    "volume_cbm": 0.002575802143465376,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-24T13:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T04:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T13:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000046",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 0.6971282404660539,
+    "volume_cbm": 0.0027952285034366954,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": "2026-01-27T11:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T11:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000047",
+    "carrier": "韵达",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.359965438302599,
+    "volume_cbm": 0.004212767584318271,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T19:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T23:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000048",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 2.2399014571731146,
+    "volume_cbm": 0.009763512258837783,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000049",
+    "carrier": "韵达",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 2.9546347880508663,
+    "volume_cbm": 0.0038909028539313465,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T09:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000050",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 2.5120834685161575,
+    "volume_cbm": 0.007541329561399927,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-26T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T02:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000051",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 3.5573477351661045,
+    "volume_cbm": 0.00957510456651647,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T19:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T07:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000052",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 0.6457339579085014,
+    "volume_cbm": 0.002380943470534373,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T09:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000053",
+    "carrier": "韵达",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.6232524389202907,
+    "volume_cbm": 0.0020210375132651624,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T08:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T03:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T08:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000054",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 3.622912884683572,
+    "volume_cbm": 0.009987659591591373,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T01:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T19:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T01:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000055",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 4.1473094826093435,
+    "volume_cbm": 0.009708051127267563,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "上海市浦东新区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000056",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 2.7894008532843535,
+    "volume_cbm": 0.0020922620957061124,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000057",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.083970533711967,
+    "volume_cbm": 0.008958218021511581,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T20:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T20:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000058",
+    "carrier": "圆通",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 3.390523652238716,
+    "volume_cbm": 0.005049770460966965,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T11:00:00",
+        "location": "成都市锦江区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000059",
+    "carrier": "京东物流",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "广州市天河区",
+    "weight_kg": 4.241258629103936,
+    "volume_cbm": 0.005662919196316147,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": "2026-01-27T01:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T01:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000060",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.627723890418996,
+    "volume_cbm": 0.006715513822489714,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T20:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000061",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "广州市天河区",
+    "weight_kg": 4.29138501851025,
+    "volume_cbm": 0.006072562309881662,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-29T03:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T18:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T03:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000062",
+    "carrier": "顺丰",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 1.803522455607226,
+    "volume_cbm": 0.009609851529589646,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-26T19:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T21:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T19:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000063",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 2.6791300854831164,
+    "volume_cbm": 0.0028362071220705883,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T23:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T09:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T23:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000064",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.9360214888142075,
+    "volume_cbm": 0.005198253103365728,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-24T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T09:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000065",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 4.388737326630938,
+    "volume_cbm": 0.004763212690013889,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T08:00:00",
+        "location": "武汉市江汉区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000066",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 2.600668029818078,
+    "volume_cbm": 0.008911680972403767,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T11:00:00",
+        "location": "杭州市西湖区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000067",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 0.7274318208255135,
+    "volume_cbm": 0.005454047831726588,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": "2026-01-21T22:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T22:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000068",
+    "carrier": "申通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 3.937355438728953,
+    "volume_cbm": 0.004293436172658068,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T14:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000069",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 2.5265947128818813,
+    "volume_cbm": 0.005948713805656776,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T16:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T20:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T16:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000070",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.3957604669860249,
+    "volume_cbm": 0.0055821026460266395,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000071",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 1.1290144359755985,
+    "volume_cbm": 0.00938231861976991,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-25T19:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T23:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T19:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000072",
+    "carrier": "圆通",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.8490575413183619,
+    "volume_cbm": 0.00834173949919442,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-27T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T09:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T09:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000073",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.5239445138447025,
+    "volume_cbm": 0.0014621964860834888,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-24T23:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T23:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T23:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000074",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.358529475221173,
+    "volume_cbm": 0.004969347095662597,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-23T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T02:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000075",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 1.9627229049172465,
+    "volume_cbm": 0.006960041197429143,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-24T20:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T21:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T20:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000076",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.755528781647905,
+    "volume_cbm": 0.003686492450712646,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-25T07:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T04:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T07:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000077",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 1.7950521897407876,
+    "volume_cbm": 0.0061612912348628064,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": "2026-01-23T01:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T20:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T01:00:00",
+        "location": "成都市锦江区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000078",
+    "carrier": "京东物流",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 0.8556324620443265,
+    "volume_cbm": 0.009316086687008927,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T04:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T12:00:00",
+        "location": "南京市鼓楼区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000079",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 1.5910611728462905,
+    "volume_cbm": 0.0070285056840379365,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T22:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T14:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T19:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T22:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000080",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 0.5233165088320851,
+    "volume_cbm": 0.005953173092016551,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-23T12:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T12:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000081",
+    "carrier": "EMS",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 4.585716314310301,
+    "volume_cbm": 0.001805146484603647,
+    "created_at": "2026-01-21T00:00:00",
+    "picked_up_at": "2026-01-21T02:00:00",
+    "delivered_at": "2026-01-22T15:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-21T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-21T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-21T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T15:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000082",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 1.3384023436512,
+    "volume_cbm": 0.0077410288129686,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T10:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000083",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 2.9448521760063873,
+    "volume_cbm": 0.005445211783076373,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": null,
+    "status": "exception",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T19:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T19:00:00",
+        "location": "北京市朝阳区",
+        "event": "异常：地址不详"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000084",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 0.5633788802830914,
+    "volume_cbm": 0.004034009613967753,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-28T16:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T16:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000085",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 1.3315154047130298,
+    "volume_cbm": 0.002265506880708686,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-23T15:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T21:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T15:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000086",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 4.793156701947106,
+    "volume_cbm": 0.0037175125572245326,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T11:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000087",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "成都市锦江区",
+    "weight_kg": 2.324374758357788,
+    "volume_cbm": 0.005522684241145507,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-26T03:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T03:00:00",
+        "location": "成都市锦江区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000088",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 3.8648067671788544,
+    "volume_cbm": 0.006451650532801625,
+    "created_at": "2026-01-23T00:00:00",
+    "picked_up_at": "2026-01-23T02:00:00",
+    "delivered_at": "2026-01-25T13:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-23T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-23T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T14:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-23T20:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T13:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000089",
+    "carrier": "京东物流",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 3.6669475632014263,
+    "volume_cbm": 0.001702924499326962,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T02:00:00",
+        "location": "武汉市江汉区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB京00000090",
+    "carrier": "京东物流",
+    "service_type": "express",
+    "ship_from": "上海市松江区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 2.488282486968339,
+    "volume_cbm": 0.007122657141451638,
+    "created_at": "2026-01-25T00:00:00",
+    "picked_up_at": "2026-01-25T02:00:00",
+    "delivered_at": "2026-01-27T21:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-25T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-25T12:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T21:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB申00000091",
+    "carrier": "申通",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "上海市浦东新区",
+    "weight_kg": 0.7598155141963614,
+    "volume_cbm": 0.005161404751650314,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T18:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T18:00:00",
+        "location": "上海市浦东新区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000092",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 2.935235768359575,
+    "volume_cbm": 0.0015423006818536303,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-29T08:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T16:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T08:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB顺00000093",
+    "carrier": "顺丰",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "武汉市江汉区",
+    "weight_kg": 4.902499782158454,
+    "volume_cbm": 0.006812927362874472,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": null,
+    "status": "in_transit",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000094",
+    "carrier": "圆通",
+    "service_type": "express",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "杭州市西湖区",
+    "weight_kg": 1.0338492527837402,
+    "volume_cbm": 0.009935620984698284,
+    "created_at": "2026-01-22T00:00:00",
+    "picked_up_at": "2026-01-22T02:00:00",
+    "delivered_at": "2026-01-24T03:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-22T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-22T05:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-22T17:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T03:00:00",
+        "location": "杭州市西湖区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WBE00000095",
+    "carrier": "EMS",
+    "service_type": "standard",
+    "ship_from": "杭州市萧山区",
+    "ship_to": "广州市天河区",
+    "weight_kg": 2.408576133800307,
+    "volume_cbm": 0.004413488212304145,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T06:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "杭州市萧山区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T08:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T06:00:00",
+        "location": "广州市天河区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000096",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 3.267154432440106,
+    "volume_cbm": 0.009426141373469008,
+    "created_at": "2026-01-26T00:00:00",
+    "picked_up_at": "2026-01-26T02:00:00",
+    "delivered_at": "2026-01-28T02:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-26T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-26T07:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-26T12:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T02:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000097",
+    "carrier": "中通",
+    "service_type": "standard",
+    "ship_from": "上海市松江区",
+    "ship_to": "深圳市南山区",
+    "weight_kg": 2.3101940786490784,
+    "volume_cbm": 0.003109053506388055,
+    "created_at": "2026-01-27T00:00:00",
+    "picked_up_at": "2026-01-27T02:00:00",
+    "delivered_at": "2026-01-28T09:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-27T00:00:00",
+        "location": "上海市松江区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-27T04:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T15:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-27T19:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T09:00:00",
+        "location": "深圳市南山区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB中00000098",
+    "carrier": "中通",
+    "service_type": "express",
+    "ship_from": "上海市青浦区",
+    "ship_to": "北京市朝阳区",
+    "weight_kg": 1.5660681564952428,
+    "volume_cbm": 0.008886324899564264,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T17:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T09:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T17:00:00",
+        "location": "北京市朝阳区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB韵00000099",
+    "carrier": "韵达",
+    "service_type": "standard",
+    "ship_from": "上海市青浦区",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 4.737138844243603,
+    "volume_cbm": 0.007042082722711502,
+    "created_at": "2026-01-28T00:00:00",
+    "picked_up_at": "2026-01-28T02:00:00",
+    "delivered_at": "2026-01-30T14:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-28T00:00:00",
+        "location": "上海市青浦区",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-28T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-28T16:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-29T04:00:00",
+        "location": "转运中心3",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-30T14:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  },
+  {
+    "waybill_id": "WB圆00000100",
+    "carrier": "圆通",
+    "service_type": "standard",
+    "ship_from": "苏州市昆山市",
+    "ship_to": "南京市鼓楼区",
+    "weight_kg": 1.853313884578165,
+    "volume_cbm": 0.00736819117739175,
+    "created_at": "2026-01-24T00:00:00",
+    "picked_up_at": "2026-01-24T02:00:00",
+    "delivered_at": "2026-01-25T20:00:00",
+    "status": "delivered",
+    "routing_nodes": [
+      {
+        "timestamp": "2026-01-24T00:00:00",
+        "location": "苏州市昆山市",
+        "event": "已揽收"
+      },
+      {
+        "timestamp": "2026-01-24T06:00:00",
+        "location": "转运中心1",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-24T18:00:00",
+        "location": "转运中心2",
+        "event": "运输中"
+      },
+      {
+        "timestamp": "2026-01-25T20:00:00",
+        "location": "南京市鼓楼区",
+        "event": "已签收"
+      }
+    ]
+  }
+]

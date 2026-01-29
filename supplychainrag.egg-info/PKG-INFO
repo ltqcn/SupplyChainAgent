@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: supplychainrag
+Version: 0.1.0
+Summary: Supply Chain AI Assistant with Governable RAG and Progressive Disclosure
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn[standard]>=0.24.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: pydantic-settings>=2.1.0
+Requires-Dist: faiss-cpu>=1.7.4
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: sentence-transformers>=2.2.2
+Requires-Dist: openai>=1.0.0
+Requires-Dist: docker>=7.0.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: alembic>=1.12.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: jieba>=0.42.1
+Requires-Dist: websockets>=12.0
+Requires-Dist: python-multipart>=0.0.6
+Requires-Dist: aiofiles>=23.2.0
+Provides-Extra: dev
+Requires-Dist: mypy>=1.7.0; extra == "dev"
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"

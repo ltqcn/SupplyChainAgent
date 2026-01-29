@@ -1,0 +1,302 @@
+[
+  {
+    "sku_id": "应援棒-001",
+    "name": "应援棒-LED-001",
+    "category": "应援棒",
+    "size": "直径4cmx长30cm",
+    "weight_g": 462.0,
+    "material": "LED",
+    "safety_stock": 261,
+    "standard_cost": 46.104830832009604,
+    "bom_items": []
+  },
+  {
+    "sku_id": "灯牌-002",
+    "name": "灯牌-布料-002",
+    "category": "灯牌",
+    "size": "40cmx60cm",
+    "weight_g": 123.0,
+    "material": "布料",
+    "safety_stock": 235,
+    "standard_cost": 22.566728757295568,
+    "bom_items": [
+      {
+        "material": "亚克力板",
+        "qty": 2,
+        "unit": "片"
+      },
+      {
+        "material": "LED灯珠",
+        "qty": 20,
+        "unit": "颗"
+      },
+      {
+        "material": "电池盒",
+        "qty": 1,
+        "unit": "个"
+      }
+    ]
+  },
+  {
+    "sku_id": "挂件-003",
+    "name": "挂件-塑料-003",
+    "category": "挂件",
+    "size": "8cm",
+    "weight_g": 162.0,
+    "material": "塑料",
+    "safety_stock": 170,
+    "standard_cost": 55.857366430881804,
+    "bom_items": []
+  },
+  {
+    "sku_id": "灯牌-004",
+    "name": "灯牌-木材-004",
+    "category": "灯牌",
+    "size": "20cmx30cm",
+    "weight_g": 247.0,
+    "material": "木材",
+    "safety_stock": 295,
+    "standard_cost": 63.62995855250153,
+    "bom_items": [
+      {
+        "material": "亚克力板",
+        "qty": 2,
+        "unit": "片"
+      },
+      {
+        "material": "LED灯珠",
+        "qty": 20,
+        "unit": "颗"
+      },
+      {
+        "material": "电池盒",
+        "qty": 1,
+        "unit": "个"
+      }
+    ]
+  },
+  {
+    "sku_id": "应援棒-005",
+    "name": "应援棒-塑料-005",
+    "category": "应援棒",
+    "size": "直径3cmx长25cm",
+    "weight_g": 224.0,
+    "material": "塑料",
+    "safety_stock": 157,
+    "standard_cost": 36.41501157826835,
+    "bom_items": []
+  },
+  {
+    "sku_id": "手幅-006",
+    "name": "手幅-纸张-006",
+    "category": "手幅",
+    "size": "20cmx60cm",
+    "weight_g": 202.0,
+    "material": "纸张",
+    "safety_stock": 427,
+    "standard_cost": 55.68965937798708,
+    "bom_items": []
+  },
+  {
+    "sku_id": "手幅-007",
+    "name": "手幅-布料-007",
+    "category": "手幅",
+    "size": "15cmx45cm",
+    "weight_g": 59.0,
+    "material": "布料",
+    "safety_stock": 157,
+    "standard_cost": 93.61887546381554,
+    "bom_items": []
+  },
+  {
+    "sku_id": "海报-008",
+    "name": "海报-木材-008",
+    "category": "海报",
+    "size": "A3",
+    "weight_g": 424.0,
+    "material": "木材",
+    "safety_stock": 348,
+    "standard_cost": 83.44209280780797,
+    "bom_items": []
+  },
+  {
+    "sku_id": "海报-009",
+    "name": "海报-塑料-009",
+    "category": "海报",
+    "size": "A2",
+    "weight_g": 320.0,
+    "material": "塑料",
+    "safety_stock": 410,
+    "standard_cost": 48.082414618079824,
+    "bom_items": []
+  },
+  {
+    "sku_id": "手幅-010",
+    "name": "手幅-塑料-010",
+    "category": "手幅",
+    "size": "15cmx45cm",
+    "weight_g": 241.0,
+    "material": "塑料",
+    "safety_stock": 324,
+    "standard_cost": 90.9652676178651,
+    "bom_items": []
+  },
+  {
+    "sku_id": "应援棒-011",
+    "name": "应援棒-亚克力-011",
+    "category": "应援棒",
+    "size": "直径4cmx长30cm",
+    "weight_g": 167.0,
+    "material": "亚克力",
+    "safety_stock": 401,
+    "standard_cost": 29.81956460064035,
+    "bom_items": []
+  },
+  {
+    "sku_id": "灯牌-012",
+    "name": "灯牌-金属-012",
+    "category": "灯牌",
+    "size": "40cmx60cm",
+    "weight_g": 313.0,
+    "material": "金属",
+    "safety_stock": 221,
+    "standard_cost": 35.06295375680923,
+    "bom_items": [
+      {
+        "material": "亚克力板",
+        "qty": 2,
+        "unit": "片"
+      },
+      {
+        "material": "LED灯珠",
+        "qty": 20,
+        "unit": "颗"
+      },
+      {
+        "material": "电池盒",
+        "qty": 1,
+        "unit": "个"
+      }
+    ]
+  },
+  {
+    "sku_id": "应援棒-013",
+    "name": "应援棒-布料-013",
+    "category": "应援棒",
+    "size": "直径4cmx长30cm",
+    "weight_g": 147.0,
+    "material": "布料",
+    "safety_stock": 148,
+    "standard_cost": 18.7237732805941,
+    "bom_items": []
+  },
+  {
+    "sku_id": "应援棒-014",
+    "name": "应援棒-LED-014",
+    "category": "应援棒",
+    "size": "直径3cmx长25cm",
+    "weight_g": 422.0,
+    "material": "LED",
+    "safety_stock": 273,
+    "standard_cost": 82.05332597755289,
+    "bom_items": []
+  },
+  {
+    "sku_id": "灯牌-015",
+    "name": "灯牌-布料-015",
+    "category": "灯牌",
+    "size": "20cmx30cm",
+    "weight_g": 192.0,
+    "material": "布料",
+    "safety_stock": 336,
+    "standard_cost": 32.48258030938904,
+    "bom_items": [
+      {
+        "material": "亚克力板",
+        "qty": 2,
+        "unit": "片"
+      },
+      {
+        "material": "LED灯珠",
+        "qty": 20,
+        "unit": "颗"
+      },
+      {
+        "material": "电池盒",
+        "qty": 1,
+        "unit": "个"
+      }
+    ]
+  },
+  {
+    "sku_id": "灯牌-016",
+    "name": "灯牌-纸张-016",
+    "category": "灯牌",
+    "size": "40cmx60cm",
+    "weight_g": 258.0,
+    "material": "纸张",
+    "safety_stock": 348,
+    "standard_cost": 53.322257617393554,
+    "bom_items": [
+      {
+        "material": "亚克力板",
+        "qty": 2,
+        "unit": "片"
+      },
+      {
+        "material": "LED灯珠",
+        "qty": 20,
+        "unit": "颗"
+      },
+      {
+        "material": "电池盒",
+        "qty": 1,
+        "unit": "个"
+      }
+    ]
+  },
+  {
+    "sku_id": "海报-017",
+    "name": "海报-纸张-017",
+    "category": "海报",
+    "size": "A2",
+    "weight_g": 196.0,
+    "material": "纸张",
+    "safety_stock": 316,
+    "standard_cost": 72.69323532401464,
+    "bom_items": []
+  },
+  {
+    "sku_id": "挂件-018",
+    "name": "挂件-木材-018",
+    "category": "挂件",
+    "size": "5cm",
+    "weight_g": 346.0,
+    "material": "木材",
+    "safety_stock": 476,
+    "standard_cost": 58.797568123684684,
+    "bom_items": []
+  },
+  {
+    "sku_id": "挂件-019",
+    "name": "挂件-LED-019",
+    "category": "挂件",
+    "size": "10cm",
+    "weight_g": 79.0,
+    "material": "LED",
+    "safety_stock": 360,
+    "standard_cost": 17.21003187165282,
+    "bom_items": []
+  },
+  {
+    "sku_id": "手幅-020",
+    "name": "手幅-亚克力-020",
+    "category": "手幅",
+    "size": "15cmx45cm",
+    "weight_g": 176.0,
+    "material": "亚克力",
+    "safety_stock": 396,
+    "standard_cost": 63.50672381800971,
+    "bom_items": []
+  }
+]

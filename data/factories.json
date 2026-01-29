@@ -1,0 +1,29 @@
+[
+  {
+    "factory_id": "F01",
+    "name": "生产基地01",
+    "location": "上海市松江区",
+    "daily_capacity": 1000,
+    "monthly_capacity": 30000,
+    "active_lines": 5,
+    "status": "operational"
+  },
+  {
+    "factory_id": "F02",
+    "name": "生产基地02",
+    "location": "上海市青浦区",
+    "daily_capacity": 3000,
+    "monthly_capacity": 90000,
+    "active_lines": 4,
+    "status": "operational"
+  },
+  {
+    "factory_id": "F03",
+    "name": "生产基地03",
+    "location": "苏州市昆山市",
+    "daily_capacity": 2000,
+    "monthly_capacity": 60000,
+    "active_lines": 4,
+    "status": "operational"
+  }
+]

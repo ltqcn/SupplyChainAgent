@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplyChainRAG - 实时推理演示</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        
+        .stats-bar {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        
+        .stat-value { font-size: 24px; font-weight: bold; color: #60a5fa; }
+        .stat-label { font-size: 12px; color: #94a3b8; margin-top: 5px; }
+        
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 450px;
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 1200px) {
+            .main-container { grid-template-columns: 1fr; }
+        }
+        
+        .panel {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #334155;
+        }
+        
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .panel-title { font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .status-badge.online { background: #10b981; color: white; }
+        .status-badge.offline { background: #ef4444; color: white; }
+        .status-badge.connecting { background: #f59e0b; color: white; }
+        
+        .log-container { height: 500px; overflow-y: auto; }
+        
+        .log-entry {
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid;
+            animation: slideIn 0.3s ease;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .log-entry.start { background: rgba(16, 185, 129, 0.1); border-left-color: #10b981; }
+        .log-entry.intent_result { background: rgba(139, 92, 246, 0.1); border-left-color: #8b5cf6; }
+        .log-entry.rag_result { background: rgba(59, 130, 246, 0.1); border-left-color: #3b82f6; }
+        .log-entry.memory_result { background: rgba(236, 72, 153, 0.1); border-left-color: #ec4899; }
+        .log-entry.step { background: rgba(59, 130, 246, 0.1); border-left-color: #3b82f6; }
+        .log-entry.assembly_step { 
+            background: rgba(245, 158, 11, 0.1); 
+            border-left-color: #f59e0b; 
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        .log-entry.context_summary { background: rgba(245, 158, 11, 0.2); border-left-color: #f59e0b; }
+        .log-entry.llm_result { background: rgba(239, 68, 68, 0.1); border-left-color: #ef4444; }
+        .log-entry.result { background: rgba(16, 185, 129, 0.15); border-left-color: #10b981; }
+        .log-entry.error { background: rgba(239, 68, 68, 0.1); border-left-color: #ef4444; }
+        .log-entry.wait { background: rgba(100, 116, 139, 0.1); border-left-color: #64748b; color: #94a3b8; }
+        
+        .query-id { font-size: 11px; color: #64748b; margin-bottom: 4px; }
+        
+        .detail-box {
+            background: #0f172a;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 8px;
+            font-size: 12px;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+        
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .detail-row:last-child { border-bottom: none; }
+        .detail-label { color: #64748b; }
+        .detail-value { color: #e2e8f0; }
+        
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-right: 4px;
+        }
+        .tag-p0 { background: #ef4444; color: white; }
+        .tag-p1 { background: #f59e0b; color: white; }
+        .tag-p2 { background: #3b82f6; color: white; }
+        .tag-p3 { background: #10b981; color: white; }
+        
+        .response-section {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #0f172a;
+            border-radius: 8px;
+        }
+        
+        .section-title {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-content {
+            font-size: 13px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        
+        .action-item, .risk-item, .recommendation-item {
+            padding: 8px 12px;
+            margin: 6px 0;
+            border-radius: 6px;
+            font-size: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        
+        .action-item { background: rgba(59, 130, 246, 0.2); border-left: 3px solid #3b82f6; }
+        .risk-item { background: rgba(239, 68, 68, 0.2); border-left: 3px solid #ef4444; }
+        .recommendation-item { background: rgba(16, 185, 129, 0.2); border-left: 3px solid #10b981; }
+        
+        .item-icon { font-size: 14px; }
+        
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            background: #0f172a;
+            border-radius: 12px;
+        }
+        
+        .flow-node {
+            padding: 8px 16px;
+            background: #334155;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .flow-node.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+        }
+        
+        .flow-arrow { color: #64748b; font-size: 14px; }
+        
+        .timestamp { font-size: 11px; color: #64748b; font-family: monospace; }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            flex: 1;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); }
+        
+        .btn-secondary {
+            background: #334155;
+            color: #e2e8f0;
+        }
+        .btn-secondary:hover { background: #475569; }
+        
+        .citation-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        
+        .citation-tag {
+            background: rgba(102, 126, 234, 0.2);
+            color: #a5b4fc;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SupplyChainRAG 实时推理演示</h1>
+        <p>展示完整的 Context组装 + Kimi SDK调用 + Action/风险/建议解析</p>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-value" id="total-queries">0</div>
+            <div class="stat-label">总查询数</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="avg-latency">0ms</div>
+            <div class="stat-label">平均延迟</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="context-tokens">0</div>
+            <div class="stat-label">Context Tokens</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="action-count">0</div>
+            <div class="stat-label">Actions</div>
+        </div>
+    </div>
+    
+    <div class="flow-diagram">
+        <div class="flow-node" id="flow-query">用户查询</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-intent">意图分析</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-rag">RAG检索</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-memory">记忆检索</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-context">Context组装</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-llm">Kimi SDK</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node" id="flow-parse">输出解析</div>
+    </div>
+    
+    <div class="main-container">
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <span>📊</span>
+                    推理日志流 (含Context组装详情)
+                </div>
+                <span class="status-badge offline" id="connection-status">离线</span>
+            </div>
+            <div class="log-container" id="log-container">
+                <div class="empty-state">等待连接...</div>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <span>💬</span>
+                    Kimi SDK 输出解析
+                </div>
+                <span class="timestamp" id="last-update">--:--:--</span>
+            </div>
+            
+            <div id="response-content">
+                <div class="empty-state">等待数据...</div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-primary" onclick="connect()">连接</button>
+                <button class="btn btn-secondary" onclick="clearLogs()">清空</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let eventSource = null;
+        let totalQueries = 0;
+        let totalLatency = 0;
+        let totalContextTokens = 0;
+        let totalActions = 0;
+        
+        function connect() {
+            if (eventSource) eventSource.close();
+            updateStatus('connecting', '连接中...');
+            
+            eventSource = new EventSource('http://localhost:8888/demo/stream');
+            
+            eventSource.onopen = () => {
+                updateStatus('online', '实时');
+                document.getElementById('log-container').innerHTML = '';
+            };
+            
+            eventSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                handleEvent(data);
+            };
+            
+            eventSource.onerror = () => {
+                updateStatus('offline', '离线');
+            };
+        }
+        
+        function updateStatus(status, text) {
+            const badge = document.getElementById('connection-status');
+            badge.className = `status-badge ${status}`;
+            badge.textContent = text;
+        }
+        
+        function updateFlow(data) {
+            const nodes = {
+                'flow-query': data.type === 'start',
+                'flow-intent': data.type === 'intent_result' || (data.step === 'intent'),
+                'flow-rag': data.type === 'rag_result' || (data.step === 'rag'),
+                'flow-memory': data.type === 'memory_result' || (data.step === 'memory'),
+                'flow-context': data.type === 'context_summary' || data.type === 'assembly_step' || (data.step === 'context'),
+                'flow-llm': data.type === 'llm_result' || (data.step === 'llm'),
+                'flow-parse': data.type === 'result'
+            };
+            Object.keys(nodes).forEach(id => {
+                document.getElementById(id).classList.toggle('active', nodes[id]);
+            });
+        }
+        
+        function handleEvent(data) {
+            updateFlow(data);
+            
+            const container = document.getElementById('log-container');
+            if (container.querySelector('.empty-state')) {
+                container.innerHTML = '';
+            }
+            
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${data.type}`;
+            
+            let content = '';
+            
+            switch(data.type) {
+                case 'start':
+                    content = `
+                        <div class="query-id">查询 #${data.query_id} · ${data.timestamp}</div>
+                        <div><strong>📝 ${data.query}</strong></div>
+                    `;
+                    break;
+                    
+                case 'intent_result':
+                    content = `
+                        <div><strong>🔍 意图分析结果</strong></div>
+                        <div class="detail-box">
+                            <div class="detail-row">
+                                <span class="detail-label">主要意图:</span>
+                                <span class="detail-value">${data.intent}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">置信度:</span>
+                                <span class="detail-value">${(data.confidence * 100).toFixed(1)}%</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">查询类型:</span>
+                                <span class="detail-value">${data.query_type}</span>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                    
+                case 'rag_result':
+                    content = `
+                        <div><strong>🔎 RAG检索结果</strong></div>
+                        <div class="detail-box">
+                            <div class="detail-row">
+                                <span class="detail-label">总结果数:</span>
+                                <span class="detail-value">${data.result_count}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">算法分布:</span>
+                                <span class="detail-value">BM25:${data.bm25_count} HNSW:${data.hnsw_count} IVF-PQ:${data.ivf_pq_count}</span>
+                            </div>
+                            <div style="margin-top:8px">
+                                ${data.top_results.map(r => `<span class="citation-tag">${r.doc_id} (${(r.confidence * 100).toFixed(1)}%)</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                    break;
+                    
+                case 'memory_result':
+                    content = `
+                        <div><strong>🧠 记忆检索</strong></div>
+                        <div class="detail-box">
+                            <div class="detail-row">
+                                <span class="detail-label">短期记忆:</span>
+                                <span class="detail-value">${data.short_term_count} 条</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">长期记忆:</span>
+                                <span class="detail-value">${data.long_term_count} 条</span>
+                            </div>
+                        </div>
+                    `;
+                    break;
+                    
+                case 'assembly_step':
+                    content = `
+                        <span class="tag tag-p${data.priority}">P${data.priority}</span>
+                        ${data.message}
+                    `;
+                    break;
+                    
+                case 'context_summary':
+                    content = `
+                        <div><strong>📦 Context组装完成</strong></div>
+                        <div class="detail-box">
+                            <div class="detail-row">
+                                <span class="detail-label">Token使用:</span>
+                                <span class="detail-value">${data.total_tokens} / ${data.max_tokens}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">组件数:</span>
+                                <span class="detail-value">${data.chunks_count} chunks</span>
+                            </div>
+                            <div style="margin-top:8px">
+                                ${data.assembly_steps.map(s => `<span class="citation-tag">${s.component}: ${s.tokens}t</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                    totalContextTokens += data.total_tokens;
+                    document.getElementById('context-tokens').textContent = Math.round(totalContextTokens / totalQueries || 0);
+                    break;
+                    
+                case 'llm_result':
+                    content = `
+                        <div><strong>🤖 Kimi SDK输出</strong></div>
+                        <div class="detail-box">
+                            <div class="detail-row">
+                                <span class="detail-label">延迟:</span>
+                                <span class="detail-value">${data.latency_ms}ms</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Token使用:</span>
+                                <span class="detail-value">${data.tokens_used.total || 'N/A'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">解析Actions:</span>
+                                <span class="detail-value">${data.actions.length}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">解析Risks:</span>
+                                <span class="detail-value">${data.risks.length}</span>
+                            </div>
+                        </div>
+                    `;
+                    // Update response panel with parsed output
+                    updateResponsePanel(data);
+                    break;
+                    
+                case 'result':
+                    content = `
+                        <div><strong>✅ 最终结果</strong></div>
+                        <div style="margin-top:8px; opacity:0.9">${data.message}</div>
+                    `;
+                    // Update stats
+                    totalQueries++;
+                    totalLatency += data.latency_ms;
+                    totalActions += data.actions?.length || 0;
+                    
+                    document.getElementById('total-queries').textContent = totalQueries;
+                    document.getElementById('avg-latency').textContent = Math.round(totalLatency / totalQueries) + 'ms';
+                    document.getElementById('action-count').textContent = totalActions;
+                    document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+                    break;
+                    
+                case 'wait':
+                    content = `<div>⏳ ${data.message}</div>`;
+                    break;
+                    
+                case 'error':
+                    content = `<div style="color:#ef4444">❌ ${data.message}</div>`;
+                    break;
+                    
+                default:
+                    content = `<div>${data.message}</div>`;
+            }
+            
+            entry.innerHTML = content;
+            container.appendChild(entry);
+            container.scrollTop = container.scrollHeight;
+            
+            while (container.children.length > 50) {
+                container.removeChild(container.firstChild);
+            }
+        }
+        
+        function updateResponsePanel(data) {
+            const container = document.getElementById('response-content');
+            
+            container.innerHTML = `
+                <div class="response-section">
+                    <div class="section-title">Response Preview</div>
+                    <div class="section-content">${data.content_preview}</div>
+                </div>
+                
+                <div class="response-section">
+                    <div class="section-title">🔧 Actions (${data.actions.length})</div>
+                    ${data.actions.map(a => `
+                        <div class="action-item">
+                            <span class="item-icon">⚡</span>
+                            <span>${a}</span>
+                        </div>
+                    `).join('') || '<div style="color:#64748b;font-size:12px">无特定行动</div>'}
+                </div>
+                
+                <div class="response-section">
+                    <div class="section-title">⚠️ Risks (${data.risks.length})</div>
+                    ${data.risks.map(r => `
+                        <div class="risk-item">
+                            <span class="item-icon">🚨</span>
+                            <span>${r}</span>
+                        </div>
+                    `).join('') || '<div style="color:#64748b;font-size:12px">未发现明显风险</div>'}
+                </div>
+                
+                <div class="response-section">
+                    <div class="section-title">💡 Recommendations (${data.recommendations.length})</div>
+                    ${data.recommendations.map(rec => `
+                        <div class="recommendation-item">
+                            <span class="item-icon">✅</span>
+                            <span>${rec}</span>
+                        </div>
+                    `).join('') || '<div style="color:#64748b;font-size:12px">按正常流程处理</div>'}
+                </div>
+            `;
+        }
+        
+        function clearLogs() {
+            document.getElementById('log-container').innerHTML = '<div class="empty-state">已清空，等待新数据...</div>';
+            document.getElementById('response-content').innerHTML = '<div class="empty-state">等待数据...</div>';
+            totalQueries = 0;
+            totalLatency = 0;
+            totalContextTokens = 0;
+            totalActions = 0;
+            document.getElementById('total-queries').textContent = '0';
+            document.getElementById('avg-latency').textContent = '0ms';
+            document.getElementById('context-tokens').textContent = '0';
+            document.getElementById('action-count').textContent = '0';
+        }
+        
+        window.onload = () => setTimeout(connect, 500);
+    </script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+[
+  {
+    "record_id": "INV-00001",
+    "warehouse_id": "WH04",
+    "sku_id": "灯牌-016",
+    "batch_id": "F03-20260307-024",
+    "available_qty": 412,
+    "reserved_qty": 146,
+    "locked_qty": 48,
+    "location_code": "A-09-4"
+  },
+  {
+    "record_id": "INV-00002",
+    "warehouse_id": "WH04",
+    "sku_id": "海报-008",
+    "batch_id": "F02-20260216-022",
+    "available_qty": 271,
+    "reserved_qty": 75,
+    "locked_qty": 42,
+    "location_code": "C-06-4"
+  },
+  {
+    "record_id": "INV-00003",
+    "warehouse_id": "WH03",
+    "sku_id": "手幅-007",
+    "batch_id": null,
+    "available_qty": 237,
+    "reserved_qty": 75,
+    "locked_qty": 36,
+    "location_code": "C-18-1"
+  },
+  {
+    "record_id": "INV-00004",
+    "warehouse_id": "WH02",
+    "sku_id": "海报-017",
+    "batch_id": "F03-20260307-024",
+    "available_qty": 310,
+    "reserved_qty": 77,
+    "locked_qty": 29,
+    "location_code": "F-16-4"
+  },
+  {
+    "record_id": "INV-00005",
+    "warehouse_id": "WH01",
+    "sku_id": "灯牌-015",
+    "batch_id": "F01-20260219-008",
+    "available_qty": 334,
+    "reserved_qty": 47,
+    "locked_qty": 33,
+    "location_code": "E-12-4"
+  },
+  {
+    "record_id": "INV-00006",
+    "warehouse_id": "WH03",
+    "sku_id": "挂件-018",
+    "batch_id": "F03-20260307-024",
+    "available_qty": 393,
+    "reserved_qty": 120,
+    "locked_qty": 50,
+    "location_code": "C-10-3"
+  },
+  {
+    "record_id": "INV-00007",
+    "warehouse_id": "WH01",
+    "sku_id": "海报-008",
+    "batch_id": null,
+    "available_qty": 205,
+    "reserved_qty": 77,
+    "locked_qty": 41,
+    "location_code": "F-06-2"
+  },
+  {
+    "record_id": "INV-00008",
+    "warehouse_id": "WH04",
+    "sku_id": "手幅-007",
+    "batch_id": "F03-20260315-019",
+    "available_qty": 828,
+    "reserved_qty": 116,
+    "locked_qty": 56,
+    "location_code": "A-07-3"
+  },
+  {
+    "record_id": "INV-00009",
+    "warehouse_id": "WH03",
+    "sku_id": "海报-008",
+    "batch_id": "F02-20260217-001",
+    "available_qty": 551,
+    "reserved_qty": 101,
+    "locked_qty": 73,
+    "location_code": "A-18-3"
+  },
+  {
+    "record_id": "INV-00010",
+    "warehouse_id": "WH04",
+    "sku_id": "应援棒-005",
+    "batch_id": "F02-20260217-001",
+    "available_qty": 402,
+    "reserved_qty": 119,
+    "locked_qty": 66,
+    "location_code": "C-06-1"
+  },
+  {
+    "record_id": "INV-00011",
+    "warehouse_id": "WH04",
+    "sku_id": "海报-009",
+    "batch_id": "F03-20260306-003",
+    "available_qty": 306,
+    "reserved_qty": 70,
+    "locked_qty": 34,
+    "location_code": "F-02-2"
+  },
+  {
+    "record_id": "INV-00012",
+    "warehouse_id": "WH03",
+    "sku_id": "应援棒-005",
+    "batch_id": "F01-20260219-008",
+    "available_qty": 92,
+    "reserved_qty": 18,
+    "locked_qty": 11,
+    "location_code": "E-20-2"
+  },
+  {
+    "record_id": "INV-00013",
+    "warehouse_id": "WH04",
+    "sku_id": "海报-017",
+    "batch_id": "F01-20260222-015",
+    "available_qty": 260,
+    "reserved_qty": 35,
+    "locked_qty": 9,
+    "location_code": "C-19-5"
+  },
+  {
+    "record_id": "INV-00014",
+    "warehouse_id": "WH01",
+    "sku_id": "灯牌-002",
+    "batch_id": null,
+    "available_qty": 166,
+    "reserved_qty": 26,
+    "locked_qty": 20,
+    "location_code": "A-06-2"
+  },
+  {
+    "record_id": "INV-00015",
+    "warehouse_id": "WH01",
+    "sku_id": "手幅-006",
+    "batch_id": "F01-20260122-014",
+    "available_qty": 371,
+    "reserved_qty": 57,
+    "locked_qty": 33,
+    "location_code": "A-08-3"
+  },
+  {
+    "record_id": "INV-00016",
+    "warehouse_id": "WH04",
+    "sku_id": "手幅-010",
+    "batch_id": "F01-20260219-008",
+    "available_qty": 642,
+    "reserved_qty": 224,
+    "locked_qty": 80,
+    "location_code": "E-07-4"
+  },
+  {
+    "record_id": "INV-00017",
+    "warehouse_id": "WH02",
+    "sku_id": "灯牌-004",
+    "batch_id": "F03-20260210-030",
+    "available_qty": 230,
+    "reserved_qty": 21,
+    "locked_qty": 21,
+    "location_code": "B-10-5"
+  },
+  {
+    "record_id": "INV-00018",
+    "warehouse_id": "WH03",
+    "sku_id": "挂件-019",
+    "batch_id": "F01-20260222-015",
+    "available_qty": 487,
+    "reserved_qty": 135,
+    "locked_qty": 83,
+    "location_code": "C-17-5"
+  },
+  {
+    "record_id": "INV-00019",
+    "warehouse_id": "WH04",
+    "sku_id": "灯牌-016",
+    "batch_id": "F03-20260125-002",
+    "available_qty": 663,
+    "reserved_qty": 147,
+    "locked_qty": 100,
+    "location_code": "C-01-1"
+  },
+  {
+    "record_id": "INV-00020",
+    "warehouse_id": "WH01",
+    "sku_id": "海报-008",
+    "batch_id": null,
+    "available_qty": 582,
+    "reserved_qty": 71,
+    "locked_qty": 35,
+    "location_code": "B-16-5"
+  },
+  {
+    "record_id": "INV-00021",
+    "warehouse_id": "WH03",
+    "sku_id": "灯牌-015",
+    "batch_id": "F03-20260315-019",
+    "available_qty": 352,
+    "reserved_qty": 60,
+    "locked_qty": 34,
+    "location_code": "A-16-3"
+  },
+  {
+    "record_id": "INV-00022",
+    "warehouse_id": "WH03",
+    "sku_id": "应援棒-014",
+    "batch_id": "F02-20260203-004",
+    "available_qty": 569,
+    "reserved_qty": 192,
+    "locked_qty": 117,
+    "location_code": "D-10-4"
+  },
+  {
+    "record_id": "INV-00023",
+    "warehouse_id": "WH01",
+    "sku_id": "挂件-018",
+    "batch_id": "F03-20260131-011",
+    "available_qty": 179,
+    "reserved_qty": 62,
+    "locked_qty": 17,
+    "location_code": "D-17-1"
+  },
+  {
+    "record_id": "INV-00024",
+    "warehouse_id": "WH04",
+    "sku_id": "挂件-018",
+    "batch_id": "F01-20260326-007",
+    "available_qty": 375,
+    "reserved_qty": 112,
+    "locked_qty": 43,
+    "location_code": "F-15-1"
+  },
+  {
+    "record_id": "INV-00025",
+    "warehouse_id": "WH03",
+    "sku_id": "手幅-007",
+    "batch_id": "F03-20260210-030",
+    "available_qty": 215,
+    "reserved_qty": 56,
+    "locked_qty": 23,
+    "location_code": "A-01-5"
+  },
+  {
+    "record_id": "INV-00026",
+    "warehouse_id": "WH02",
+    "sku_id": "海报-008",
+    "batch_id": "F02-20260217-001",
+    "available_qty": 408,
+    "reserved_qty": 89,
+    "locked_qty": 68,
+    "location_code": "A-15-1"
+  },
+  {
+    "record_id": "INV-00027",
+    "warehouse_id": "WH04",
+    "sku_id": "应援棒-005",
+    "batch_id": null,
+    "available_qty": 224,
+    "reserved_qty": 43,
+    "locked_qty": 31,
+    "location_code": "D-16-2"
+  },
+  {
+    "record_id": "INV-00028",
+    "warehouse_id": "WH02",
+    "sku_id": "灯牌-015",
+    "batch_id": "F03-20260210-030",
+    "available_qty": 461,
+    "reserved_qty": 116,
+    "locked_qty": 36,
+    "location_code": "A-09-4"
+  },
+  {
+    "record_id": "INV-00029",
+    "warehouse_id": "WH03",
+    "sku_id": "应援棒-011",
+    "batch_id": null,
+    "available_qty": 236,
+    "reserved_qty": 39,
+    "locked_qty": 14,
+    "location_code": "E-16-2"
+  },
+  {
+    "record_id": "INV-00030",
+    "warehouse_id": "WH04",
+    "sku_id": "灯牌-015",
+    "batch_id": "F01-20260221-018",
+    "available_qty": 595,
+    "reserved_qty": 118,
+    "locked_qty": 68,
+    "location_code": "C-07-2"
+  },
+  {
+    "record_id": "INV-00031",
+    "warehouse_id": "WH04",
+    "sku_id": "挂件-019",
+    "batch_id": "F01-20260225-025",
+    "available_qty": 257,
+    "reserved_qty": 117,
+    "locked_qty": 46,
+    "location_code": "F-13-4"
+  },
+  {
+    "record_id": "INV-00032",
+    "warehouse_id": "WH04",
+    "sku_id": "应援棒-005",
+    "batch_id": null,
+    "available_qty": 96,
+    "reserved_qty": 22,
+    "locked_qty": 11,
+    "location_code": "A-15-1"
+  },
+  {
+    "record_id": "INV-00033",
+    "warehouse_id": "WH04",
+    "sku_id": "海报-017",
+    "batch_id": "F03-20260221-005",
+    "available_qty": 360,
+    "reserved_qty": 46,
+    "locked_qty": 13,
+    "location_code": "A-16-3"
+  },
+  {
+    "record_id": "INV-00034",
+    "warehouse_id": "WH04",
+    "sku_id": "应援棒-011",
+    "batch_id": "F02-20260111-028",
+    "available_qty": 287,
+    "reserved_qty": 37,
+    "locked_qty": 12,
+    "location_code": "D-11-4"
+  },
+  {
+    "record_id": "INV-00035",
+    "warehouse_id": "WH01",
+    "sku_id": "挂件-018",
+    "batch_id": "F01-20260219-008",
+    "available_qty": 520,
+    "reserved_qty": 73,
+    "locked_qty": 53,
+    "location_code": "B-03-4"
+  },
+  {
+    "record_id": "INV-00036",
+    "warehouse_id": "WH01",
+    "sku_id": "灯牌-004",
+    "batch_id": "F03-20260308-023",
+    "available_qty": 266,
+    "reserved_qty": 20,
+    "locked_qty": 20,
+    "location_code": "A-10-3"
+  },
+  {
+    "record_id": "INV-00037",
+    "warehouse_id": "WH04",
+    "sku_id": "灯牌-012",
+    "batch_id": "F01-20260227-017",
+    "available_qty": 324,
+    "reserved_qty": 71,
+    "locked_qty": 26,
+    "location_code": "B-06-1"
+  },
+  {
+    "record_id": "INV-00038",
+    "warehouse_id": "WH04",
+    "sku_id": "手幅-020",
+    "batch_id": "F01-20260219-008",
+    "available_qty": 444,
+    "reserved_qty": 35,
+    "locked_qty": 30,
+    "location_code": "D-09-4"
+  },
+  {
+    "record_id": "INV-00039",
+    "warehouse_id": "WH01",
+    "sku_id": "海报-009",
+    "batch_id": null,
+    "available_qty": 414,
+    "reserved_qty": 43,
+    "locked_qty": 19,
+    "location_code": "B-03-4"
+  },
+  {
+    "record_id": "INV-00040",
+    "warehouse_id": "WH03",
+    "sku_id": "灯牌-012",
+    "batch_id": "F01-20260122-014",
+    "available_qty": 476,
+    "reserved_qty": 173,
+    "locked_qty": 57,
+    "location_code": "B-13-4"
+  },
+  {
+    "record_id": "INV-00041",
+    "warehouse_id": "WH02",
+    "sku_id": "灯牌-004",
+    "batch_id": "F02-20260103-012",
+    "available_qty": 404,
+    "reserved_qty": 130,
+    "locked_qty": 54,
+    "location_code": "A-13-3"
+  },
+  {
+    "record_id": "INV-00042",
+    "warehouse_id": "WH01",
+    "sku_id": "应援棒-001",
+    "batch_id": null,
+    "available_qty": 571,
+    "reserved_qty": 148,
+    "locked_qty": 44,
+    "location_code": "C-08-5"
+  },
+  {
+    "record_id": "INV-00043",
+    "warehouse_id": "WH02",
+    "sku_id": "灯牌-012",
+    "batch_id": "F02-20260129-020",
+    "available_qty": 205,
+    "reserved_qty": 36,
+    "locked_qty": 15,
+    "location_code": "F-05-1"
+  },
+  {
+    "record_id": "INV-00044",
+    "warehouse_id": "WH03",
+    "sku_id": "灯牌-002",
+    "batch_id": null,
+    "available_qty": 26,
+    "reserved_qty": 5,
+    "locked_qty": 3,
+    "location_code": "A-10-3"
+  },
+  {
+    "record_id": "INV-00045",
+    "warehouse_id": "WH02",
+    "sku_id": "应援棒-014",
+    "batch_id": "F02-20260126-026",
+    "available_qty": 476,
+    "reserved_qty": 46,
+    "locked_qty": 30,
+    "location_code": "E-09-2"
+  },
+  {
+    "record_id": "INV-00046",
+    "warehouse_id": "WH04",
+    "sku_id": "海报-009",
+    "batch_id": null,
+    "available_qty": 248,
+    "reserved_qty": 32,
+    "locked_qty": 22,
+    "location_code": "A-15-1"
+  },
+  {
+    "record_id": "INV-00047",
+    "warehouse_id": "WH02",
+    "sku_id": "应援棒-005",
+    "batch_id": null,
+    "available_qty": 594,
+    "reserved_qty": 91,
+    "locked_qty": 56,
+    "location_code": "E-12-1"
+  },
+  {
+    "record_id": "INV-00048",
+    "warehouse_id": "WH01",
+    "sku_id": "应援棒-013",
+    "batch_id": "F02-20260203-004",
+    "available_qty": 330,
+    "reserved_qty": 97,
+    "locked_qty": 38,
+    "location_code": "C-19-4"
+  },
+  {
+    "record_id": "INV-00049",
+    "warehouse_id": "WH01",
+    "sku_id": "灯牌-012",
+    "batch_id": "F02-20260304-016",
+    "available_qty": 19,
+    "reserved_qty": 4,
+    "locked_qty": 2,
+    "location_code": "C-20-2"
+  },
+  {
+    "record_id": "INV-00050",
+    "warehouse_id": "WH04",
+    "sku_id": "挂件-003",
+    "batch_id": null,
+    "available_qty": 245,
+    "reserved_qty": 34,
+    "locked_qty": 30,
+    "location_code": "A-02-3"
+  }
+]
